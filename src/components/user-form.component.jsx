@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+
 import FormUserDetails from "./form-user-details.component";
 import FormPersonalDetails from "./form-personal-details.component";
+import Confirm from "./confirm.component";
+import Success from "./success.component";
 
 const UserForm = () => {
   const [state, setState] = useState({
@@ -44,10 +47,12 @@ const UserForm = () => {
       );
 
     case 3:
-      return <h1>Confirm</h1>;
+      return (
+        <Confirm nextStep={nextStep} prevStep={prevStep} values={values} />
+      );
 
     case 4:
-      return <h1>Success</h1>;
+      return <Success />;
 
     default:
       return;

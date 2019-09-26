@@ -21,7 +21,6 @@ const FormUserDetails = ({ nextStep, handleChange, values }) => {
   return (
     <MuiThemeProvider>
       <React.Fragment>
-        <h1>Form User Details</h1>
         <AppBar title="Enter User Details" />
         <TextField
           hintText="Enter Your First Name"
